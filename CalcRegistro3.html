@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+<center>
+<h2>Calcular Nota para 3er Registro</h2>
+<form>
+ <h4>Primer Registro:</h4>
+ <input type="text" id="t1" placeholder="Registro 1">
+ <br>
+ <h4>Segundo Registro:<h4>
+ <input type="text" id="t2" placeholder="Registro 2">
+ <br><br>
+ <input type="button" value="Calcular" onclick="Calcular();">
+</form>
+<p id="promedio"></p>
+</center>
+</body>
+<script>
+ function Calcular() {
+ var vr1 = document.getElementById('t1').value;
+ var vr2 = document.getElementById('t2').value;
+ var vr3 = parseFloat(vr1);
+ var vr4 = parseFloat(vr2);
+ var r3 = 6 -((vr3*0.3)+(vr4*0.3));
+ var p = r3/0.4;
+ document.getElementById('promedio').innerHTML = p;
+ }
+</script>
+</html>
