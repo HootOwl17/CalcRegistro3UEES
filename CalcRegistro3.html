@@ -21,8 +21,9 @@
  var vr2 = document.getElementById('t2').value;
  var vr3 = parseFloat(vr1);
  var vr4 = parseFloat(vr2);
- var r3 = 6 -((vr3*0.3)+(vr4*0.3));
- var p = r3/0.4;
+ var r3 = 6 -((vr3 + vr4)*0.3);
+ var prom = r3/0.4;
+ var p = prom.toFixed(2);
  document.getElementById('promedio').innerHTML = p;
  }
 </script>
