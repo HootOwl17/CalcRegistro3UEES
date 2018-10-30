@@ -4,7 +4,7 @@
 * HTML/JS
   (Funcional)
 * Java
-  (¿No Funcional?)
+  (¿Funcional?)
 * Batch
   (Aún no Funcional)
 
