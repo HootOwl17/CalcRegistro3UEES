@@ -7,5 +7,7 @@
   (¿Funcional?)
 * Batch
   (Aún no Funcional)
+* Pseint 
+  (Funcional)
 
 # [Tutorial para Ejecución](https://goo.gl/SsAhv)
