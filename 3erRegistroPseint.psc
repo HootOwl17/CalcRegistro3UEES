@@ -4,7 +4,7 @@ Algoritmo Calcular_Nota_para_3er_Registro
 		Leer N1;
 		Escribir "Nota de 2do Registro";
 		Leer N2;
-		
+
 		N<-6-((N1+N2)*0.3);
 		N3 <- N/0.4;
 		Borrar Pantalla;
@@ -12,7 +12,7 @@ Algoritmo Calcular_Nota_para_3er_Registro
 		Escribir "	<Presione cualquier tecla>	"
 		Esperar Tecla;
 		Borrar Pantalla;
-		Escribir "¿OTRA VEZ? (S/N)"
+		Escribir "Â¿OTRA VEZ? (S/N)"
 		Leer OV
 		Borrar Pantalla
 	Hasta Que OV="N" o OV = "n"
