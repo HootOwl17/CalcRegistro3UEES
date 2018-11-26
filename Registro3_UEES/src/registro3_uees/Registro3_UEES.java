@@ -6,6 +6,7 @@ import javax.swing.JOptionPane;
 
 /**
  * Nombre Registro3_UEES
+ * Version 1.0
  * Fecha 25/11/18
  * Copyright Dave Morz
  * @author David Morales
