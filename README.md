@@ -1,10 +1,10 @@
-# Calculador de Nota para 3er Registro UEES
+﻿# Calculador de Nota para 3er Registro UEES
 
 # Actualmente en codigos
 * HTML/JS
   (Funcional)
 * Java
-  (¿Funcional?)
+  (Funcional)
 * Batch
   (Funcional (Condicionado))
 * Pseint
