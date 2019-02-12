@@ -6,7 +6,7 @@
 * Java
   (Funcional)
 * Batch
-  (Funcional (Condicionado))
+  (Funcional (Condicionado (Unicamente Notas en centenas)))
 * Pseint
   (Funcional)
 
