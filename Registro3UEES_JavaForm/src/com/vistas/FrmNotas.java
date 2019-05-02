@@ -51,6 +51,18 @@ public class FrmNotas extends javax.swing.JFrame {
 
         jLabel4.setText("Registro 3");
 
+        txtR1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtR1KeyTyped(evt);
+            }
+        });
+
+        txtR2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtR2KeyTyped(evt);
+            }
+        });
+
         txtR3.setEditable(false);
 
         btnClean.setText("Limpiar");
@@ -133,6 +145,26 @@ public class FrmNotas extends javax.swing.JFrame {
     private void btnCalcularMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCalcularMouseClicked
         operation();
     }//GEN-LAST:event_btnCalcularMouseClicked
+
+    private void txtR1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtR1KeyTyped
+        Character s=evt.getKeyChar();
+        if (!Character.isDigit(s)&& s!='.') {
+            evt.consume();
+        }
+        if (s=='.'&& txtR1.getText().contains(".")) {
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtR1KeyTyped
+
+    private void txtR2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtR2KeyTyped
+        Character s=evt.getKeyChar();
+        if (!Character.isDigit(s)&& s!='.') {
+            evt.consume();
+        }
+        if (s=='.'&& txtR2.getText().contains(".")) {
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtR2KeyTyped
 
     public void Clean(){
         txtR1.setText("");
