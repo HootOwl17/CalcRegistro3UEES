@@ -1,3 +1,9 @@
+<!-- 
+Aplicaión para Calcular Nota de Tercer Registro UEES
+by HootOwl17 (David Morales)
+Versión 2.4
+Fecha: 2017-2022 
+-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,14 +11,15 @@
   <title>Calcular Nota para 3er Registro</title>
   <script type="text/javascript">
    function Calcular() {
-   var vr1 = document.getElementById('t1').value;
-   var vr2 = document.getElementById('t2').value;
-   var vr3 = parseFloat(vr1);
-   var vr4 = parseFloat(vr2);
-   var r3 = 6 -((vr3 + vr4)*0.3);
+   var vr1 = parseFloat(document.getElementById('t1').value);
+   var vr2 = parseFloat(document.getElementById('t2').value);
+   var r3 = 6 -((vr1 + vr2)*0.3);
    var prom = r3/0.4;
    var p = prom.toFixed(2);
    document.getElementById('promedio').innerHTML = p;
+   }
+   function Clear(){
+    document.getElementById('promedio').innerHTML = "";
    }
   </script>
 </head>
@@ -27,7 +34,7 @@
  <input type="text" id="t2" placeholder="Registro 2">
  <br><br>
  <input type="button" value="Calcular" onclick="Calcular();">
- <input type="reset" value="Limpiar">
+ <input type="reset" value="Limpiar" onclick="Clear();">
 </form>
 <p id="promedio"></p>
 </center>
