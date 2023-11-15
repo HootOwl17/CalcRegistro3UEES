@@ -6,6 +6,6 @@ set/a media= ((%num1% + %num2%) * 3)/10)
 set/a resta = 600 - %media%
 set/a prom = (%resta% * 10)/(4)
 echo.
-echo Nececita una nota de %prom%
+echo Necesita una nota de %prom%
 pause >nul
 exit
